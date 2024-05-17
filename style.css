@@ -1,12 +1,16 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html,body{
     height: 100%;
     width: 100%;
 }
-
+*::selection{
+    background-color: black;
+    color: orangered;
+}
 /* Header CSS */
 #container{
     height: 100%;
@@ -14,7 +18,7 @@ html,body{
     /* background-color: rgb(132, 126, 126); */
 }
 #nav{
-    height: 140px;
+    height: 153px;
     width: 100%;
     background-color: rgb(42, 40, 40);
     display: flex;
@@ -59,7 +63,8 @@ html,body{
     height: 55vh;
     width: 100%;
     z-index: 0;
-    border: 1px solid black;
+    /* margin-top: 1vh; */
+    /* border: 1px solid black; */
     background-image: url(./Images/R-3.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -90,10 +95,12 @@ html,body{
     background-color: rgba(238, 61, 25, 0.745);
 }
 /* part2 css ends */
+
+/* part3 ends */
 #Services-container{
     height: 50vh;
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 5vh;
     display: flex;
     align-items: center;
@@ -128,4 +135,271 @@ html,body{
     line-height: 4vh;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+}
+/* part3 ends */
+
+
+/* part5 starts */
+#BGimage{
+    height: 55vh;
+    width: 100%;
+    z-index: 0;
+    /* margin-top: 1vh; */
+    /* border: 1px solid black; */
+    background-image: url(./Images/c259e518ef3214084dfb15bef406d8ae-1536x570.jpg);
+    background-position:top;
+    background-repeat: no-repeat;
+    color: white;
+}
+#bg-foreground{
+    height: 55vh;
+    width: 100%;
+    z-index: 9;
+    background-color: black;
+    opacity: .6;
+}
+#bg-foreground h1{
+    font-size: 3vw;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    transform: translate(35%,35%);
+    margin-top: 40px;
+}
+#bg-foreground h6{
+    font-size: 1.5vw;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transform: translate(49%,170%);
+}
+#bg-foreground p{
+    font-size: 1.1vw;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transform: translate(78%,40%);
+    margin-top: 2vh;
+    line-height: 3vh;
+    text-align: center;
+    width: 42vw;
+}
+#bg-foreground #btn{
+    padding: 1vw;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 1.2vw;
+    position: absolute;
+    color: rgb(228, 223, 222);
+    top: 445%;
+    left: 7%;  
+}
+#bg-foreground button:hover{
+    border: 1px solid white;
+    color: #000;
+    background-color: rgba(238, 60, 25, 0.967);
+}
+
+/* part5 ends */
+#footer{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4vw;
+    margin-top: 20vh;
+    background-color: black;
+}
+#footer .part{
+    height: 40vh;
+    width: 55vh;
+    padding: 2vh;
+    color: white;
+    /* color:black; */
+    margin-top: 2vh;
+}
+.part img{
+   height: 10vh;
+   width: 50vh;
+   border-radius: 5px;
+}
+.part p{
+    font-size: 1.1vw;
+    margin-top: 5vh;
+    line-height: 4vh;
+    color: white;
+}
+.part #social{
+    width: 20vh;
+    margin-top: 2vh;
+    padding: 2vh;
+    color: white;
+}
+.part i{
+    font-size: 3vh;
+    color: orangered;
+}
+.part h4 {
+    font-size: 3vh;
+    margin-top: 2vh;
+    line-height: 3vh;
+    color: white;
+}
+.part h5{
+    margin-top:  5vh;
+    font-size: 2.6vh;
+    color: white;
+    margin-bottom: 5vh;
+}
+.part a{
+    text-decoration: none;
+    color: white;
+    margin-top: 2vh;
+    font-size: 2.3vh;
+
+}
+
+#footer-coptright{
+    background-color: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 2vh;
+    margin-bottom: 5vh;
+}
+/* footer part end*/
+
+/* lokesh Css */
+
+#container #btn{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    padding: 2vh;
+    margin-left: 35vw;
+    border: 1px solid black;
+    font-size: 2.2vh;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    color: orangered;
+    background-color: transparent;
+}
+#container #btn:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid  white;
+}
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .section {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .section.left .image-section {
+    order: 1;
+  }
+  
+  .section.left .content-section {
+    order: 2;
+  }
+  
+  .section.right .image-section {
+    order: 2;
+  }
+  
+  .section.right .content-section {
+    order: 1;
+  }
+  
+  .image-section {
+    flex: 1;
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  .content-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .text-section {
+    margin-bottom: 20px;
+  }
+  
+  .text-section h1 {
+    margin-top: 0;
+  }
+  
+  .text-section p {
+    margin-bottom: 0;
+  }
+  
+  .description-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .description-section h2 {
+    margin-top: 0;
+  }
+  
+  .description-section p {
+    margin-bottom: 0;
+  }
+/*   
+Lavina css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px; /* Optional: adds space between grid items */
+    padding: 20px; /* Optional: adds padding around the grid */
+}
+
+.grid-item {
+    background-color: #f0f0f0; /* Background color for grid items */
+    border: 1px solid #ccc; /* Border around grid items */
+    border-radius: 8px; /* Rounded corners for grid items */
+    padding: 20px; /* Padding inside each grid item */
+    text-align: center; /* Center the text inside grid items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item i {
+    font-size: 2rem; /* Icon size */
+    margin-bottom: 10px; /* Space between icon and heading */
+}
+
+.grid-item h2 {
+    font-size: 1.5rem; /* Heading size */
+    margin: 10px 0; /* Space around heading */
+}
+
+.grid-item p {
+    font-size: 1rem; /* Text size */
+    color: #666; /* Text color */
+}
+.grid-item img{
+    max-width: 100px;
+    height: 100px;
 }
